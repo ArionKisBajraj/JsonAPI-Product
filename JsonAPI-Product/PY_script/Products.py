@@ -6,7 +6,7 @@ class Product:
     @staticmethod
     def connection():
         try:
-            db_manager = DbManager("localhost", 3306, "root", "", "DBproducts") 
+            db_manager = DbManager("192.168.2.200", 3306, "kisbajraj_arion", "vizier.Dunant.fisheries.", "kisbajraj_arion_DBproducts") 
             return db_manager.connect()
         except mysql.connector.Error as e:
             print("Errore durante la connessione al database:", str(e))
