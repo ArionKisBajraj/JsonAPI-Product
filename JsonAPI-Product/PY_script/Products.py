@@ -1,4 +1,4 @@
-from dbmanager import DbManager
+from DB_connection import DbManager
 import mysql.connector
 
 class Product:
