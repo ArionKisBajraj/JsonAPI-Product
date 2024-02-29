@@ -141,12 +141,8 @@ class RequestHandler(BaseHTTPRequestHandler):
             self.send_error(400, 'Bad Request - Invalid JSON')       
 
 if __name__ == '__main__':
-    server_address = ('192.168.2.216', 8081)
+    server_address = ('192.168.2.216', 8888)
     httpd = HTTPServer(server_address, RequestHandler)
-    print(f'Starting server on port 8081...')
+    print(f'Starting server on port 8888...')
     httpd.serve_forever()
     
-
-
-
-
